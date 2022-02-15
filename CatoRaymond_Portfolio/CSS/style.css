@@ -1,0 +1,55 @@
+body {
+  background-color: rgba(239, 170, 196, 0.4);
+  max-width: 2400px;
+  margin: auto;
+}
+header {
+  background-color: rgba(239, 170, 196, 1);
+  width: 100%;
+  display: grid;
+}
+#title {
+  text-align: center;
+}
+nav {
+  float: bottom;
+  text-align: center;
+  padding-top: 1rem;
+}
+#workGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.mainHead {
+  font-size: 3rem;
+  color: rgba(148, 82, 74, 1);
+  font-family: "Ubuntu", sans-serif;
+}
+.secondHead {
+  font-size: 1.5rem;
+  color: rgba(150, 105, 25, 1);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.DFY {
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(148, 82, 74, 0.6);
+}
+.button {
+  font-family: "Ubuntu", sans-serif;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+@media screen and (max-width: 40em) {
+  #workGrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
